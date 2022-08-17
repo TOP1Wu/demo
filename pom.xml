@@ -50,3 +50,43 @@
     </build>
 
 </project>
+
+
+
+Project 表
+
+_id              objectId   主键,
+Name             String     项目名称
+Number           String     项目编号
+Status           String     项目状态 
+StartDate        Date       开始时间
+TargetDate       Date       目标时间
+ProjectManagerName String   项目经理名称,
+ProjectManagerId   int（32）      项目经理Id
+type               int（32）      项目类型（已固定）
+Member        List<string>    参与人id
+ObjectiveAndBackground String   项目背景
+CreateTime        Date    创建时间
+CreateId          String      创建者id
+UpdateTime        Date    更新时间
+UpdateId          String      更新者id
+IsDeleted         Bollen      是否删除
+
+
+Task 表
+_id              objectId   主键,
+ProjectId        objectId   项目主键,
+Name             string     任务名称
+StartDate        Date       开始时间
+TargetDate       Date       目标时间
+BackGround       string     背景
+CreateTime        Date    创建时间
+CreateId          String      创建者id
+UpdateTime        Date    更新时间
+UpdateId          String      更新者id
+IsDeleted         Bollen      是否删除
+
+
+
+
+
